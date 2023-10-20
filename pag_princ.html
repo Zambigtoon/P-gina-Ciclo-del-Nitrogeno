@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css">
+    <title>Ciclo del Nitrógeno</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1>El Ciclo del Nitrógeno</h1>
+    </div>
+    
+    <style>
+         h1 {
+            text-align: center; /* Centra el texto */
+            font-weight: bold; /* Hace que el texto esté en negrita */
+        }
+
+        .title-container {
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            display: inline-block;
+            border: 7px solid #0a6285;
+            padding: 18px 390px;
+            font-weight: bold;
+        }
+
+        .slideshow-container {
+            max-width: 3000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 10s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        .info {
+            display: none;
+            font-size: 35px;
+        }
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .footer {
+            background-color: #000000;
+            color: aliceblue;
+            padding: 10 px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin:0;
+            z-index: 1000;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        video {
+            width: 50%; /* ajusta el ancho del video según tus necesidades */
+            height: auto; /* ajusta la altura de forma proporcional al ancho */
+        }
+    </style>
+    <div class="footer">
+        <p>&copy; Miguel Guerra-Vanessa Tobon-Carolina Castillo-Elizabeth Montoya-Alison Gaviria. Todos los derechos reservados.</p>
+    </div>
+
+    <div>
+        <p id="info-text" class="info"></p>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+        <a href="#seccion1" onclick="showInfo('Elemento químico de número atómico 7, masa atómica 14,007 y símbolo N ; es un gas incoloro, inodoro e inerte, compone cuatro quintos del volumen del aire de la atmósfera y se usa para sintetizar amoníaco y otros productos, para fabricar explosivos, como refrigerante y como atmósfera inerte para conservar ciertos productos.')"><img src="imagen1.jpg"></a>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion2" onclick="showInfo('•El nitrógeno es un componente esencial de los cuerpos de los seres vivos. Los átomos de nitrógeno se encuentran en todas las proteínas y en el ADN.<p>• El nitrógeno existe en la atmósfera como N2 gaseoso. Durante la fijación del nitrógeno, las bacterias convierten el N2 en amoníaco, una forma de nitrógeno que puede ser utilizada por las plantas. Cuando los animales comen plantas, adquieren compuestos nitrogenados que pueden utilizar.<p>•	El nitrógeno es un nutriente limitante común en la naturaleza y la agricultura. Un nutriente limitante es aquel que está disponible en una cantidad mínima y por lo tanto limita el crecimiento.<p>•	Cuando los fertilizantes que contienen nitrógeno y fósforo llegan a los ríos y lagos, pueden provocar florecimientos de algas, proceso conocido como eutrofización. ')"><img src="imagen2.jpg"></a>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion3" onclick="showInfo('El ciclo del nitrógeno implica procesos biológicos y físicos que convierten el nitrógeno en varias formas químicas en la biosfera y los ecosistemas terrestres y marinos. A pesar de que la mayor parte de la atmósfera terrestre es nitrógeno, su disponibilidad para los seres vivos es limitada. La ecología presta especial atención a este ciclo, ya que la disponibilidad de nitrógeno impacta procesos vitales como la producción primaria y la descomposición. La actividad humana, incluyendo la quema de combustibles fósiles y el uso de fertilizantes nitrogenados, ha alterado drásticamente este ciclo, amenazando el equilibrio ambiental y la salud humana.')"><img src="imagen3.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion4" onclick="showInfo('Las bacterias y procariontes juegan un papel crucial en el ciclo del nitrógeno al convertir el nitrógeno atmosférico en formas biológicamente utilizables, como el amoníaco. Este amoníaco es absorbido por las plantas para la síntesis de moléculas orgánicas, que luego pasan a los animales a través de la alimentación. El nitrógeno, una vez dentro de los seres vivos, se convierte en nitrógeno orgánico y luego es liberado de nuevo a la atmósfera en forma de N2 gaseoso mediante la actividad bacteriana, completando así un ciclo vital en los ecosistemas terrestres.')"><img src="imagen4.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion5" onclick="showInfo('La fijación es el proceso mediante el cual el nitrógeno se combina con hidrógeno u oxígeno, permitiendo su utilización por parte de los seres vivos en sus procesos metabólicos. Inicia el ciclo convirtiendo el nitrógeno atmosférico en formas como iones nitrito o nitrato, que pueden ser absorbidos por el suelo o los organismos. Además, se convierte en sustancias químicamente activas en la atmósfera, como el dióxido de nitrógeno, que pueden originar algunas de estas formas.')"><img src="imagen5.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion6" onclick="showInfo('La amonificación implica la conversión del nitrógeno en iones de amonio, presente en formas como grupos amino (-NH2) o imino (-NH-) en la materia viva. Los animales, incapaces de oxidar el nitrógeno, eliminan el exceso en forma de varios compuestos. En entornos acuáticos, se produce amoníaco directamente, que luego se convierte en iones de amonio en solución. En entornos terrestres, se produce urea o compuestos nitrogenados insolubles, como guanina y ácido úrico, que son excretados en la orina y comunes en animales con acceso limitado a agua.')"><img src="imagen6.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion7" onclick="showInfo('La nitrificación implica la oxidación biológica del amonio al nitrito por microorganismos aerobios que utilizan el oxígeno como oxidante para obtener energía. Este proceso se divide en dos etapas, la nitritación, realizada por bacterias como Nitrosomonas y Nitrosococcus, que convierten el amonio en nitrito (NO2-), y la nitratación, realizada por bacterias como Nitrobacter, que convierten el nitrito en nitrato (NO3-). La combinación de la amonificación y la nitrificación restablece una forma de nitrógeno asimilable por las plantas, que circula a través de la cadena alimentaria.')"><img src="imagen7.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion8" onclick="showInfo('La desnitrificación es un proceso bacteriano que reduce los iones de nitrato (NO3-) a nitrógeno molecular (N2) en el suelo o el agua. Este proceso ocurre en ausencia de oxígeno como parte de la respiración anaerobia. Los pasos implicados incluyen la transformación sucesiva del nitrato a nitrito, óxido nítrico, óxido nitroso y finalmente nitrógeno molecular. Este proceso es crucial para mantener el equilibrio del nitrógeno en los ecosistemas terrestres y acuáticos. Además, se utiliza en la depuración de aguas residuales para evitar la eutrofización y reducir la presencia de nitrito, un compuesto potencialmente cancerígeno.')"><img src="imagen8.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion9" onclick="showInfo('Los pasos son similares al ciclo del nitrógeno terrestre. Los procesos de amonificación, nitrificación y desnitrificación son realizados por bacterias y arqueas Marina.<p> Algunos compuestos nitrogenados caen al suelo oceánico en forma de sedimentos. A lo largo de periodos de tiempo prolongados, los sedimentos son comprimidos hasta formar rocas sedimentarias. Finalmente, el levantamiento geológico puede mover las rocas sedimentarias de nuevo a la tierra. En el pasado, los científicos no creían que estas rocas sedimentarias ricas en nitrógeno eran una fuente importante nitrógeno para los ecosistemas terrestres. Sin embargo, un nuevo estudio sugiere que pueden ser importantes, ya que el nitrógeno se libera gradualmente a medida que las rocas se desgastan o meteorizan, quedando disponible para las plantas.')"><img src="imagen9.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+        <div class="mySlides">
+            <a href="#seccion10" onclick="showInfo('La actividad humana impacta el ciclo del nitrógeno de diversas maneras. Aunque los humanos no pueden fijar biológicamente el nitrógeno, se producen alrededor de 450 millones de toneladas métricas de nitrógeno fijo anualmente mediante el proceso de Haber-Bosch, utilizado principalmente para la fabricación de fertilizantes agrícolas. La liberación de nitrógeno al medio ambiente ocurre principalmente a través de la quema de combustibles fósiles y el uso de fertilizantes nitrogenados en la agricultura. Esto resulta en la emisión de compuestos nitrogenados, que contribuyen a la lluvia ácida y al efecto invernadero.<p> El exceso de fertilizantes en los cuerpos de agua, debido al escurrimiento superficial, conduce a la eutrofización. Este fenómeno provoca un crecimiento excesivo de algas y microorganismos, agotando el oxígeno en el agua y creando zonas muertas que afectan negativamente a la vida acuática, como peces y camarones.')"><img src="imagen10.jpeg"></a><p id="info-text" class="info"></p>
+        </div>
+
+    </div>
+    <div class="title-container">
+        <h1>Experimento con Nitrógeno Líquido</h1>
+    </div>
+    <video controls>
+        <source src="Experimentos con Nitrogeno Líquido Escuela de Ciencia.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 7000); // Cambiar imagen cada 7 segundos
+        }
+
+        function showInfo(text) {
+            var infoText = document.getElementById('info-text');
+            infoText.innerHTML = text;
+            infoText.style.display = 'block';
+        }
+
+        showSlides(); // Llamada a la función después de su definición
+    </script>
+
+</body>
+</html>

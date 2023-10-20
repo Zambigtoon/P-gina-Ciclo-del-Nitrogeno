@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a03737;
+    background: linear-gradient(#10757c, #39218f); 
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+/* Encabezado */
+header{
+    background-color: #021a24;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #363457;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #241742;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
